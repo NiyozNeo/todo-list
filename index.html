@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="scss/main.css">
+ </head>
+
+ <body>
+     <div class="container">
+         <form class="todo-form">
+             <input class="todo-form__input" type="text" required>
+             <button class="todo-form__button" type="submit"><span class="key"></span><span class="key"></span><span class="key"></span><span class="key">
+                 </span>Submit</button>
+         </form>
+
+         <ul class="todo-list">
+           
+         </ul>
+         <div class="d-flex justify-content-between">
+            <button class="mainbtn allbtn">
+                <p>
+                    <span class="all-count"></span> all
+                </p>
+            </button>
+            <button class="mainbtn completedbtn">
+                <p>
+                    <span class="complated-count"></span> completed
+                </p>
+            </button>
+            <button class="mainbtn uncompletedbtn">
+                <p>
+                    <span class="uncomplated-count"></span> uncompleted
+                </p>
+            </button>
+            <button class="mainbtn clearbtn">Clear</button>
+        </div>
+     </div>
+     <template id="todo-item--template">
+         <li class="todo-item d-flex justify-content-between align-items-center">
+             <div class="todo-item-input">
+                 <input class="todo-input-complete" id="complated" type="checkbox" />
+                 <span class="todo-item-complete-text"></span>
+             </div>
+
+             <button class="todo-item-delete-btn btn btn-primary mb-3">
+                 Delete
+             </button>
+         </li>
+     </template>
+
+     <script src="js/main.js"></script>
+ </body>
+
+ </html>
